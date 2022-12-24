@@ -7,3 +7,4 @@ Libraries loaded:
 3- Redux (npm install --save redux)<br/>
 4- Router (npm i react-router-dom)<br/>
 
+# Online_Shopping_Project
