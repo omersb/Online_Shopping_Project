@@ -11,7 +11,7 @@
 
 <br>
 
-[Click here!]<https://osb-online-shopping-project.netlify.app/>)
+[Click here!](<https://osb-online-shopping-project.netlify.app/>)
 
 <br>
 
