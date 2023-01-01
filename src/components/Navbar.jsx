@@ -5,8 +5,8 @@ const Navbar = () => {
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg bg-light">
-				<div className="container-fluid">
-					<NavLink className="navbar-brand" to="#">
+				<div className="container">
+					<NavLink className="navbar-brand" to="/">
 						LA COLLECTION
 					</NavLink>
 					<button
@@ -23,16 +23,27 @@ const Navbar = () => {
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-								<NavLink className="nav-link active" aria-current="page" to="#">
+								<NavLink className="nav-link active" aria-current="page" to="/">
 									Home
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink className="nav-link" to="#">
-									Link
+								<NavLink className="nav-link" to="/products">
+									Products
 								</NavLink>
 							</li>
 						</ul>
+						<div className="buttons">
+							<NavLink to="/login" className="btn btn-outline-dark">
+								<i className="fa fa-sign-in me-1" /> Login
+							</NavLink>
+							<NavLink to="/login" className="btn btn-outline-dark">
+								<i className="fa fa-user-plus me-1" /> Register
+							</NavLink>
+							<NavLink to="/login" className="btn btn-outline-dark">
+								<i className="fa fa-shopping-cart me-1" /> Cart(0)
+							</NavLink>
+						</div>
 					</div>
 				</div>
 			</nav>
