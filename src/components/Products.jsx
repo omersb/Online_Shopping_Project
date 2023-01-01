@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Axios } from "axios";
+import axios from "axios";
 import { NavLink } from "react-router-dom";
 
 const Products = () => {
@@ -7,20 +7,18 @@ const Products = () => {
 	const [filter, setFilter] = useState(data);
 
 	const getProducts = async () => {
-		const response = await Axios("https://fakestoreapi.com/products");
+		const response = await axios("https://fakestoreapi.com/products");
 		console.log(response.data);
 		setData(await response.data);
 		setFilter(await response.data);
 	};
-
 	useEffect(() => {
 		getProducts();
-	},[]);
+	}, []);
 
-	const handleClick = (category) => {
+	const handleCategory = (category) => {
 		setFilter(data.filter((item) => item.category === category));
 	};
-
 	return (
 		<div>
 			<div className="container my-5 py-5">
@@ -40,25 +38,25 @@ const Products = () => {
 						</button>
 						<button
 							className="btn btn-outline-dark me-2"
-							onClick={() => handleClick("men's clothing")}
+							onClick={() => handleCategory("men's clothing")}
 						>
-							Men's Category
+							Men's Clothing
 						</button>
 						<button
 							className="btn btn-outline-dark me-2"
-							onClick={() => handleClick("women's clothing")}
+							onClick={() => handleCategory("women's clothing")}
 						>
-							Women's Category
+							Women's Clothing
 						</button>
 						<button
 							className="btn btn-outline-dark me-2"
-							onClick={() => handleClick("jewelery")}
+							onClick={() => handleCategory("jewelery")}
 						>
 							Jewelery
 						</button>
 						<button
 							className="btn btn-outline-dark me-2"
-							onClick={() => handleClick("electronic")}
+							onClick={() => handleCategory("electronics")}
 						>
 							Electronic
 						</button>

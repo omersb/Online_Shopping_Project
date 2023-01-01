@@ -21,7 +21,7 @@ const Navbar = () => {
 						<span className="navbar-toggler-icon" />
 					</button>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 							<li className="nav-item">
 								<NavLink className="nav-link active" aria-current="page" to="/">
 									Home
@@ -33,15 +33,15 @@ const Navbar = () => {
 								</NavLink>
 							</li>
 						</ul>
-						<div className="buttons">
+						<div className="buttons ">
 							<NavLink to="/login" className="btn btn-outline-dark">
 								<i className="fa fa-sign-in me-1" /> Login
 							</NavLink>
-							<NavLink to="/login" className="btn btn-outline-dark">
+							<NavLink to="/register" className="btn btn-outline-dark ms-2">
 								<i className="fa fa-user-plus me-1" /> Register
 							</NavLink>
-							<NavLink to="/login" className="btn btn-outline-dark">
-								<i className="fa fa-shopping-cart me-1" /> Cart(0)
+							<NavLink to="/cart" className="btn btn-outline-dark ms-2">
+								<i className="fa fa-shopping-cart me-1" /> Cart (0)
 							</NavLink>
 						</div>
 					</div>
