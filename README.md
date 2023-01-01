@@ -1,5 +1,5 @@
 
-<h1>Hi I’m Ömer Said 👋. Welcome to my Recipe App</h1>
+<h1>Hi I’m Ömer Said 👋. Welcome to my Online Shopping Project</h1>
 
 <br>
 
